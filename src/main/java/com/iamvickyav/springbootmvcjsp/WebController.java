@@ -10,7 +10,7 @@ public class WebController {
 
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     String getHomePage(){
-        return "home";
+        return "home"; //calls home.jsp
     }
 
     @RequestMapping(value = "/profile",method = RequestMethod.GET)
@@ -18,7 +18,7 @@ public class WebController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("profile");
         modelAndView.addObject("title","Mr");
-        modelAndView.addObject("name","Dhoni");
+        modelAndView.addObject("name","Sandesh");
         return modelAndView;
     }
 }
